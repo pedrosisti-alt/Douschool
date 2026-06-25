@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOUSCHOOL</title>
+  <meta charset="UTF-8">
+  <title>App Educacional</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <div class="passo ativo" id="passo-0">
-
-    <button class="btn proximo" data-proximo="1">top ranks</button>
-
+<body>
+  <header>
+    <h1>Perfil do Aluno</h1>
+    <div class="perfil-info">
+      <p>Pontos: <span id="pontos">0</span></p>
+      <p>Nível de dificuldade: <span id="nivel">Fácil</span></p>
+      <p>Nick Name: <span id="nickname">Aluno123</span></p>
     </div>
-    <div class="top rank" id="passo-1">
-       
-       <button class="btn proximo" data-proximo="0">Volta</button> 
-       <p>
-        top ranks</p>
+  </header>
+
+  <main>
+    <section class="cartas">
+      <h2>Escolha a Matéria</h2>
+      <div class="opcoes">
+        <button class="carta">Matemática</button>
+        <button class="carta">História</button>
+        <button class="carta">Ciências</button>
       </div>
-      <script src="site.js"></script>
+    </section>
+
+    <section class="desafios">
+      <h2>Desafios</h2>
+      <div class="box">2/10</div>
+      <div class="box">5/10</div>
+      <div class="box">10/10</div>
+    </section>
+
+    <section class="rumores">
+      <h2>Rumores</h2>
+      <div class="rumor">Rumor 1</div>
+      <div class="rumor">Rumor 2</div>
+      <div class="rumor">Rumor 3</div>
+    </section>
+
+    <section class="conquistas">
+      <h2>Conquistas</h2>
+      <ul>
+        <li>Primeira ajuda</li>
+        <li>10 pontos acumulados</li>
+        <li>Desafio concluído</li>
+      </ul>
+    </section>
+
+    <section class="area-livre">
+      <h2>Área Livre do Aluno</h2>
+      <textarea placeholder="Escreva suas ideias..."></textarea>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
