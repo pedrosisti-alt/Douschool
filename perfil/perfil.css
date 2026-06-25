@@ -1,0 +1,14 @@
+body{
+    background-color: azure;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    font-size: 15px;
+}
+
+button{
+  border: none;
+  background-color: aliceblue;
+}
