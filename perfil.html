@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Douschool - Sistema Unificado</title>
+  <title>Douschool - Perfil</title>
   <link rel="stylesheet" href="perfil.css">
 </head>
 <body>
@@ -13,52 +13,25 @@
       <h1>Douschool</h1>
       <nav>
         <ul>
-          <li><a href="#">Top Rank</a></li>
-          <li><a href="#">Sequencia de dias</a></li>
-          <li><a href="#">Pontos</a></li>
-          <li><a href="#" class="active">Perfil do ajudado</a></li>
+          <li><a href="index.html#inicio">Top Rank</a></li>
+          <li><a href="index.html#proposta">Sequencia de dias</a></li>
+          <li><a href="index.html#sustentabilidade">Pontos</a></li>
+          <li><a href="perfil.html">Perfil do ajudado</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <div class="notebook-tabs-container">
-    <div class="notebook-tab">Top do Rank</div>
-    <div class="notebook-tab">sequência de dias</div>
-    <div class="notebook-tab">Pontos</div>
-    <div class="notebook-tab active-tab">Perfil do aluno ajudado</div>
-    <div class="notebook-tab-indicator">◀ um ajudando</div>
-  </div>
-
   <main class="main-container">
-    
-    <div class="duo-card main-content-box">
-      <div class="cards-section-title">
-        <h3>Cartões aleatórios para o aluno escolher a matéria</h3>
-      </div>
-      <div class="cards-grid">
-        <div class="subject-card">
-          <div class="card-question">?</div>
-          <div class="difficulty-tag">Nível: <span id="diff-card-1">1/10</span></div>
-        </div>
-        <div class="subject-card">
-          <div class="card-question">?</div>
-          <div class="difficulty-tag">Nível: <span id="diff-card-2">5/10</span></div>
-        </div>
-        <div class="subject-card">
-          <div class="card-question">?</div>
-          <div class="difficulty-tag">Nível: <span id="diff-card-3">10/10</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="duo-card profile-box">
+    <div class="duo-card">
+      
       <div class="profile-title">
         <span class="avatar">👤</span>
         <h2>Nick Name</h2>
       </div>
 
       <div class="profile-row">
+        <!-- Adicionados os IDs para o JS conseguir alterar os valores dinamicamente -->
         <div class="stats-box">
           <div class="stat-cell" id="stat-sequencia">sequência</div>
           <div class="stat-cell" id="stat-pontos">Pontos</div>
@@ -83,8 +56,8 @@
         <div class="label-indicator text-label">▼ Área livre do Aluno</div>
         <textarea class="giant-input" placeholder="Escreva algo aqui... Seu professor vai conseguir ver tudo por aqui!"></textarea>
       </div>
-    </div>
 
+    </div>
   </main>
 
   <footer class="bottom-nav">
@@ -102,6 +75,7 @@
     </button>
   </footer>
 
+  <!-- Importação do arquivo JS que vai injetar os pontos falsos -->
   <script src="perfil.js"></script>
 </body>
 </html>
