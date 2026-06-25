@@ -1,6 +1,11 @@
 body{
     background-color: azure;
 }
+<<<<<<< HEAD
+h1{
+    position: fixed;
+    left: 0px;
+=======
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
@@ -11,4 +16,5 @@ h1{
 button{
   border: none;
   background-color: aliceblue;
+>>>>>>> 47e77f34ad2fb5fcdaf1d614122c5060f70aa453
 }
