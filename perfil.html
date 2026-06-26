@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -14,4 +15,85 @@
    </nav>
 </body>
 <link rel="stylesheet" href="perfil.js">
+=======
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Douschool - Perfil</title>
+  <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <h1>Douschool</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html#inicio">Top Rank</a></li>
+          <li><a href="index.html#proposta">Sequencia de dias</a></li>
+          <li><a href="index.html#sustentabilidade">Pontos</a></li>
+          <li><a href="perfil.html">Perfil do ajudado</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <div class="duo-card">
+      
+      <div class="profile-title">
+        <span class="avatar">👤</span>
+        <h2>Nick Name</h2>
+      </div>
+
+      <div class="profile-row">
+        <!-- Adicionados os IDs para o JS conseguir alterar os valores dinamicamente -->
+        <div class="stats-box">
+          <div class="stat-cell" id="stat-sequencia">sequência</div>
+          <div class="stat-cell" id="stat-pontos">Pontos</div>
+          <div class="stat-cell empty"></div>
+        </div>
+        <div class="label-indicator">◀ Aluno ajudando</div>
+      </div>
+
+      <div class="profile-row left-align">
+        <div class="label-indicator">◀ conquistas</div>
+        <div class="badges-row">
+          <div class="badge">🥇</div>
+          <div class="badge">⭐</div>
+          <div class="badge">🔥</div>
+          <div class="badge">📚</div>
+          <div class="badge">📐</div>
+          <div class="badge">🤝</div>
+        </div>
+      </div>
+
+      <div class="text-section">
+        <div class="label-indicator text-label">▼ Área livre do Aluno</div>
+        <textarea class="giant-input" placeholder="Escreva algo aqui... Seu professor vai conseguir ver tudo por aqui!"></textarea>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bottom-nav">
+    <button class="nav-item">
+      <i class="icon">🛠️</i>
+      <span>Funções</span>
+    </button>
+    <button class="nav-item">
+      <i class="icon">📚</i>
+      <span>Matérias</span>
+    </button>
+    <button class="nav-item">
+      <i class="icon">🏆</i>
+      <span>Missões</span>
+    </button>
+  </footer>
+
+  <!-- Importação do arquivo JS que vai injetar os pontos falsos -->
+  <script src="perfil.js"></script>
+</body>
+>>>>>>> aa2268842a57d4b85ab8290b909f4e05fa3d0e2b
 </html>
