@@ -1,8 +1,8 @@
 :root {
-  --primary-green: #2e7d32;
-  --dark-green: #1b5e20;
-  --accent-green: #4caf50;
-  --light-green: #c8e6c9;
+  --primary-green: #0088ff;
+  --dark-green: #0091ff;
+  --accent-green: #0044ff;
+  --light-green: #0d8aff;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
    HEADER / MENU SUPERIOR
    ========================================================================== */
 header {
-  background: linear-gradient(135deg, #1e5f2a, #2e7d32);
+  background: linear-gradient(135deg, #0051ff, #004db9);
   color: white;
   position: sticky;
   top: 0;
