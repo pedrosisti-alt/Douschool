@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+body{
+    background-color: azure;
+}
+
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    font-size: 15px;
+}
+
+button{
+  border: none;
+  background-color: rgb(251, 251, 251);
+=======
 /* ==========================================================
    1. RESET GLOBAL E CONFIGURAÇÕES PADRÃO
    ========================================================== */
@@ -414,4 +431,5 @@ nav a {
   .giant-input {
     height: 220px; /* Evita que o teclado do Android cubra a tela toda */
   }
+>>>>>>> aa2268842a57d4b85ab8290b909f4e05fa3d0e2b
 }
