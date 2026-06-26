@@ -1,0 +1,417 @@
+/* ==========================================================
+   1. RESET GLOBAL E CONFIGURAÇÕES PADRÃO
+   ========================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #3c3c3c;
+  padding-bottom: 120px; /* Garante espaço para o menu inferior não cobrir o conteúdo */
+}
+
+/* ==========================================================
+   2. CABEÇALHO (HEADER DESKTOP)
+   ========================================================== */
+header {
+  background: #217346;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+/* ==========================================================
+   3. BARRA DE ABAS SUPERIOR (INSPIRADA NO CADERNO)
+   ========================================================== */
+.notebook-tabs-container {
+  max-width: 760px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.notebook-tab {
+  background: white;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #777;
+  cursor: pointer;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+.notebook-tab.active-tab {
+  border-color: #58cc02;
+  border-bottom-color: #46a302;
+  color: #58cc02;
+}
+
+.notebook-tab-indicator {
+  font-size: 14px;
+  font-weight: 800;
+  color: #58cc02;
+  text-transform: uppercase;
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+/* ==========================================================
+   4. ESTRUTURA DO CARD PRINCIPAL (DUOLINGO STYLE)
+   ========================================================== */
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.duo-card {
+  width: 100%;
+  max-width: 760px;
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Reduz o espaçamento interno especificamente na tela de cartas */
+.main-content-box {
+  gap: 25px !important;
+}
+
+/* ==========================================================
+   5. ELEMENTOS INTERNOS: TELA DE PERFIL
+   ========================================================== */
+.profile-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar {
+  font-size: 32px;
+  background: #e5e5e5;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+}
+
+.profile-title h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #3c3c3c;
+  font-weight: 800;
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.left-align {
+  justify-content: flex-start;
+  gap: 35px;
+}
+
+/* Caixa horizontal dividida para sequência e pontos */
+.stats-box {
+  display: flex;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 380px;
+  background: white;
+}
+
+.stat-cell {
+  flex: 1;
+  padding: 14px 10px;
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  color: #4b4b4b;
+  border-right: 2px solid #e5e5e5;
+  text-transform: uppercase;
+}
+
+.stat-cell:last-child {
+  border-right: none;
+}
+
+.stat-cell.empty {
+  background: #fafafa;
+  max-width: 50px;
+}
+
+/* Estilo do texto inserido pelo JS dentro das células */
+.stat-cell strong {
+  display: block;
+  font-size: 18px;
+  color: #217346;
+  margin-top: 4px;
+}
+
+.label-indicator {
+  font-size: 16px;
+  font-weight: 800;
+  color: #afafaf;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Conquistas (Círculos) */
+.badges-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  width: 55px;
+  height: 55px;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background: white;
+}
+
+/* Área livre (Textarea) */
+.text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.text-label {
+  align-self: flex-start;
+}
+
+.giant-input {
+  width: 100%;
+  height: 280px;
+  border: 2px solid #e5e5e5;
+  border-bottom: 4px solid #e5e5e5;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3c3c3c;
+  resize: none;
+  outline: none;
+  background: white;
+  box-sizing: border-box;
+}
+
+.giant-input:focus {
+  border-color: #58cc02;
+}
+
+/* ==========================================================
+   6. ELEMENTOS INTERNOS: TELA DE CARTÕES ALEATÓRIOS
+   ========================================================== */
+.cards-section-title h3 {
+  font-size: 15px;
+  font-weight: 800;
+  color: #afafaf;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.subject-card {
+  background: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-bottom: 5px solid #e5e5e5;
+  border-radius: 20px;
+  width: 160px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.subject-card:hover {
+  border-color: #58cc02;
+}
+
+.subject-card:active {
+  transform: translateY(3px);
+  border-bottom-width: 2px;
+}
+
+.card-question {
+  font-size: 56px;
+  font-weight: 800;
+  color: #afafaf;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.difficulty-tag {
+  font-size: 14px;
+  font-weight: 800;
+  color: #555;
+  border-top: 2px solid #f1f5f9;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background: #fafafa;
+  border-radius: 0 0 18px 18px;
+}
+
+/* ==========================================================
+   7. MENU INFERIOR FIXO (BOTTOM NAVIGATION)
+   ========================================================== */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border-top: 2px solid #e5e5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-item {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #777777;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.nav-item:hover {
+  color: #217346;
+}
+
+.nav-item .icon {
+  font-size: 24px;
+}
+
+/* ==========================================================
+   8. MEDIA QUERIES (OTIMIZAÇÃO COMPLETA PARA ANDROID / MOBILE)
+   ========================================================== */
+@media (max-width: 768px) {
+  header {
+    display: none; /* Esconde o topo do PC, foca na navegação de baixo */
+  }
+
+  /* Cria scroll lateral suave nas abas se a tela for muito fina */
+  .notebook-tabs-container {
+    margin-top: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .notebook-tab-indicator {
+    display: none; /* Esconde a seta para salvar espaço em telas pequenas */
+  }
+
+  .duo-card {
+    padding: 20px;
+    gap: 25px;
+  }
+
+  /* Faz os cartões ficarem um embaixo do outro no celular */
+  .cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subject-card {
+    width: 100%;
+    max-width: 280px;
+    height: 180px;
+  }
+
+  /* Adaptações da tela de Perfil */
+  .profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .stats-box {
+    max-width: 100%;
+  }
+
+  .giant-input {
+    height: 220px; /* Evita que o teclado do Android cubra a tela toda */
+  }
+}
